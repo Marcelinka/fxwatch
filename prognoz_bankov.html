@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="template_styles.css" rel="stylesheet">
+    <link href="adaptive.css" rel="stylesheet">
+    <link href="js/jQueryFormStyler-master/dist/jquery.formstyler.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/Chart.min.js"></script>-->
+    <script src="js/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['line', 'corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var chartDiv = document.getElementById('chart_div');
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('date', '');
+            data.addColumn('number', "");
+
+            data.addRows([
+                [new Date(2014, 0),  -.5],
+                [new Date(2014, 1),   .4],
+                [new Date(2014, 2),   .5],
+                [new Date(2014, 3),  2.9],
+                [new Date(2014, 4),  6.3],
+                [new Date(2014, 5),    9],
+                [new Date(2014, 6), 10.6],
+                [new Date(2014, 7), 10.3],
+                [new Date(2014, 8),  7.4],
+                [new Date(2014, 9),  4.4],
+                [new Date(2014, 10), 1.1],
+                [new Date(2014, 11), -.2]
+            ]);
+
+            var materialOptions = {
+                backgroundColor: '#f7f7f7',
+                colors: ['#4b93f5']
+            };
+
+            function drawMaterialChart() {
+                var materialChart = new google.charts.Line(chartDiv);
+                materialChart.draw(data, google.charts.Line.convertOptions(materialOptions));
+            }
+
+            drawMaterialChart();
+        }
+    </script>
+
+
+</head>
+<body>
+
+<div class="upper-header__block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-8 col-lg-offset-6 col-md-offset-6">
+                <input type="text" class="header-search__control" placeholder="Поиск по сайту" />
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-4">
+                <div class="header-current-time__block">
+                    <span>12:35:45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <a href="/" class="logo__block"></a>
+            </div>
+            <div class="col-lg-9 col-xs-12">
+
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+                        </div>
+
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav nav-main nav-justified">
+                                <li><a href="#">Главная</a></li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Инструменты <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Рубрики <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Календарь</a></li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Прогнозы <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Макроэкономика</a></li>
+                                <li><a href="#">Графики</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="breadcrumbs">
+        <span class="breadcrumb-item"><a href="#">Главная</a> » </span>
+        <span class="breadcrumb-item"><a href="#">Прогнозы</a> » </span>
+        <span class="breadcrumb-item">Прогноз банков</span>
+    </div>
+    <h1>Прогноз банков</h1>
+
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+            <form class="forecast__block">
+                <select class="forecast-select">
+                    <option>EUR/USD</option>
+                    <option>GBP/USD</option>
+                    <option>USD/JPY</option>
+                    <option>Нефть</option>
+                    <option>Золото</option>
+                    <option>Фондовый рынок</option>
+                </select>
+                <button type="button" class="btn-default" data-toggle="modal" data-target="#forecast-modal">
+                    <img src="images/forecast-button-icon.png">
+                    Goldman Sachs
+                </button>
+                <div class="modal fade" id="forecast-modal" role="dialog" aria-labelledby="forecast-modal-label">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2 class="modal-title" id="forecast-modal-label">Прогноз курса <br> основным валют крупнейших банков</h2>
+                            </div>
+                            <div class="modal-body">
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-1">
+                                <label for="checkbox-1">
+                                    Банк 1
+                                </label>
+
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-2">
+                                <label for="checkbox-2">
+                                    Банк 2
+                                </label>
+
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-3">
+                                <label for="checkbox-3">
+                                    Банк 3
+                                </label>
+
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-4">
+                                <label for="checkbox-4">
+                                    Банк 4
+                                </label>
+
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-5">
+                                <label for="checkbox-5">
+                                    Банк 5
+                                </label>
+
+                                <input type="checkbox" class="modal-checkbox" id="checkbox-6">
+                                <label for="checkbox-6">
+                                    Банк 6
+                                </label>
+                                <hr>
+                                <div class="checkbox-center__block">
+                                    <input type="checkbox" class="modal-checkbox" id="checkbox-7">
+                                    <label for="checkbox-7">
+                                        Средний прогноз выбранных банков
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" value="Показать" class="btn-default">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--<div class="chart__block">
+                <canvas id="myChart"></canvas>
+            </div>-->
+
+            <div class="chart__block">
+                <div id="chart_div"></div>
+            </div>
+
+            <div class="same__block">
+                <div class="green-headline__block">
+                    <div class="green-headline__text">Рекомендуемые новости</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 column first">
+                    <div class="same-news__block">
+                        <img src="images/same-news-1.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Цены на нефть живут верой
+                            в продление соглашения
+                            ОПЕК</p>
+                    </div>
+                    <hr class="hidden-sm hidden-xs">
+                    <div class="same-news__block">
+                        <img src="images/same-news-2.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Цены на нефть живут верой
+                            в продление соглашения
+                            ОПЕК</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 column">
+                    <div class="same-news__block">
+                        <img src="images/same-news-3.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Трамп оттолкнул премьера
+                            Черногории во время
+                            открытия штаб-квартиры...</p>
+                    </div>
+                    <hr class="hidden-sm hidden-xs">
+                    <div class="same-news__block">
+                        <img src="images/same-news-4.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Трамп оттолкнул премьера
+                            Черногории во время
+                            открытия штаб-квартиры...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 column last">
+                    <div class="same-news__block">
+                        <img src="images/same-news-5.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Цены на нефть живут верой
+                            в продление соглашения
+                            ОПЕК</p>
+                    </div>
+                    <hr class="hidden-sm hidden-xs">
+                    <div class="same-news__block">
+                        <img src="images/same-news-6.png">
+                        <div class="date">18.05.17 04:45</div>
+                        <p>Цены на нефть живут верой
+                            в продление соглашения
+                            ОПЕК</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+            <div class="quotations__block">
+                <div class="block-headline">Котировки</div>
+                <img src="images/quotations.png" class="img-responsive">
+            </div>
+
+            <div class="tags__block">
+                <div class="block-headline">Тэги</div>
+                <div class="tag">Золото</div>
+                <div class="tag">Фондовый рынок</div>
+                <div class="tag">Gbpusd</div>
+                <div class="tag">Нефть</div>
+                <div class="tag">Usdjpy</div>
+                <div class="tag">Rus</div>
+                <div class="tag">Д. Трамп</div>
+                <div class="tag">Usa</div>
+                <div class="tag">Золото</div>
+                <div class="tag">Gbpusd</div>
+                <div class="tag">Нефть</div>
+                <div class="tag">Usdjpy</div>
+                <div class="tag">Rus</div>
+                <div class="tag">Д. Трамп</div>
+                <div class="tag">Золото</div>
+                <div class="tag">Фондовый рынок</div>
+                <div class="tag">Gbpusd</div>
+                <div class="tag">Нефть</div>
+                <div class="tag">Usdjpy</div>
+                <div class="tag">Rus</div>
+                <div class="tag">Д. Трамп</div>
+                <div class="tag">Usa</div>
+                <div class="tag">Золото</div>
+                <div class="tag">Gbpusd</div>
+                <div class="tag">Нефть</div>
+                <div class="tag">Usdjpy</div>
+                <div class="tag">Rus</div>
+                <div class="tag">Д. Трамп</div>
+            </div>
+
+            <div class="read__block">
+                <div class="block-headline">Читаемое</div>
+                <div class="article-preview__block">Трамп оттолкнул премьера Черногории
+                    во время открытия штаб-квартиры...</div>
+                <hr>
+                <div class="article-preview__block">Цены на нефть живут верой в продление
+                    соглашения ОПЕК</div>
+                <hr>
+                <div class="article-preview__block">Трамп оттолкнул премьера Черногории
+                    во время открытия штаб-квартиры...</div>
+                <hr>
+                <div class="article-preview__block">Цены на нефть живут верой в продление
+                    соглашения ОПЕК</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Главная</a>
+
+                <a href="#" class="footer-quicklink__block">Авторизация</a>
+                <a href="#" class="footer-quicklink__block">Регистрация</a>
+                <a href="#" class="footer-quicklink__block">Контакты</a>
+
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Инструменты</a>
+                <a href="#" class="footer-quicklink__block">EUR/USD</a>
+                <a href="#" class="footer-quicklink__block">GBP/USD</a>
+                <a href="#" class="footer-quicklink__block">USD/JPY</a>
+                <a href="#" class="footer-quicklink__block">Нефть</a>
+                <a href="#" class="footer-quicklink__block">Золото</a>
+                <a href="#" class="footer-quicklink__block">Фондовый рынок</a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Рубрики</a>
+                <a href="#" class="footer-quicklink__block">EUR/USD</a>
+                <a href="#" class="footer-quicklink__block">GBP/USD</a>
+                <a href="#" class="footer-quicklink__block">USD/JPY</a>
+                <a href="#" class="footer-quicklink__block">Нефть</a>
+                <a href="#" class="footer-quicklink__block">Золото</a>
+                <a href="#" class="footer-quicklink__block">Фондовый рынок</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Календарь</a></div>
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Прогнозы</a></div>
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Макроэкономика</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-copyright-spacer__block">
+
+                        </div>
+                        <a href="#" class="footer-whitelink__text">Политика конфеденциальности</a> <br />
+                        <a href="#" class="footer-whitelink__text">Условия использования материалов с сайта</a>
+                        <div class="footer-copyright__block">
+                            © 2016-2017 fx-watch.ru Все права зарегистрированы. 18+
+                        </div>
+                        <div class="footer-disclaimer__block">
+                            Информация, представленная на сайте, не является основанием для принятия инвестиционных решений и дана исключительно в ознакомительных целях.
+                            Использование материалов в интернете должно сопровождаться гиперссылкой на сайт fxwatch.ru. Автоматический импорт материалов и информации с сайта запрещен.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    (function($) {
+        $(function() {
+            $('select').styler();
+        });
+    })(jQuery);
+</script>
+
+<!--<script>
+    /*var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        "type": "line",
+        "data": {
+            "labels": ["Apr 25","","","","May 2","","","","May 9","","","","May 16","","","","May 23"],
+            "datasets": [{
+                "label": "",
+                "data": [144,145,144,144, 144,147,148,147, 148,150,153,154, 154,156,155,151, 150],
+                "fill": false,
+                "borderColor": "rgb(80, 138, 238)",
+                "lineTension": 0.1
+            }]
+        },
+        "options": {}
+    });*/
+    window.randomScalingFactor = function() {
+        return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+    };
+
+    window.chartColors = {
+        red: 'rgb(255, 99, 132)',
+        orange: 'rgb(255, 159, 64)',
+        yellow: 'rgb(255, 205, 86)',
+        green: 'rgb(75, 192, 192)',
+        blue: 'rgb(54, 162, 235)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(201, 203, 207)'
+    };
+
+    var config = {
+        type: 'line',
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "",
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor()
+                ],
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            }
+        }
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("myChart").getContext("2d");
+        window.myLine = new Chart(ctx, config);
+    };
+</script>-->
+
+</body>
+</html>

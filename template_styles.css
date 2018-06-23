@@ -1,0 +1,772 @@
+* {
+    outline: none !important;
+}
+body {
+    font-family: 'Circe';
+    color: #333333;
+}
+
+/* Общее */
+h1 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 22px;
+}
+.date {
+    font-weight: 400;
+    font-size: 11px;
+    color: #929292;
+    display: inline-block;
+    padding: 3px 6px 0;
+    background-color: #f0f0f0;
+}
+.block-headline {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #00ac4e;
+    margin-bottom: 15px;
+}
+.green-headline__block {
+    background-color: #ededed;
+    margin-bottom: 30px;
+}
+.green-headline__block .green-headline__text {
+    display: inline-block;
+    padding: 8px 12px 5px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #00ac4e;
+}
+.marked-list {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 0;
+}
+.marked-list li::before {
+    content: "•";
+    color: #00ac4e;
+    margin-right: 3px;
+}
+.marked-list li {
+    list-style-type: none;
+}
+.table-style {
+    width: 40%;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+}
+.table-style th {
+    width: 33%;
+    background-color: #ececec;
+    padding: 10px 15px;
+}
+.table-style th:first-child,
+.table-style td:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.table-style th:last-child,
+.table-style td:last-child {
+    border-radius: 0 5px 5px 0;
+}
+.table-style td {
+    padding: 5px 15px;
+}
+.table-style tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+.table-style th:not(:first-child),
+.table-style td:not(:first-child) {
+    text-align: center;
+}
+.table-style td:not(:first-child) {
+    font-family: "Circe";
+    font-weight: 300;
+    font-size: 16px;
+}
+.table-style th,
+.table-style td {
+    border-top: none;
+}
+.none-img {
+    background: url(images/none-img-back.png) no-repeat center #f7f7f7;
+}
+.btn-default {
+    display: inline-block;
+    color: white;
+    padding: 13px 22px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #00ac4e;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px #147942;
+    text-transform: uppercase;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    cursor: pointer;
+    background-color: #343434;
+    box-shadow: 0 2px #000000;
+    color: white;
+}
+
+.upper-header__block {
+    min-height: 52px;
+    background: #343434;
+    color: #FFF;
+    padding: 8px 0;
+}
+.header-search__control {
+    width: 100%;
+    background: url("images/header-search__icon.png") no-repeat 98% 50%;
+    border: 1px solid #7e7e7e;
+    color: #7e7e7e;
+    height: 36px;
+    border-radius: 8px;
+    padding: 8px 35px 8px 13px;
+}
+.header-current-time__block {
+    color: #FFF;
+    line-height: 36px;
+    position: relative;
+    background: url("images/header-current-time__icon.png") no-repeat 0 50%;
+    padding-left: 26px;
+    padding-right: 10px;
+    width: 95px;
+    cursor: pointer;
+    float: right;
+}
+.header-current-time__block::after {
+    content: ' ';
+    position: absolute;
+    background: url("images/header-current-time__caret.png");
+    width: 10px;
+    height: 5px;
+    top: 16px;
+    right: 0;
+}
+.logo__block {
+    background: url("images/logo.svg") no-repeat;
+    width: 207px;
+    height: 40px;
+    display: block;
+}
+header {
+    background: #f7f7f7;
+    padding: 18px 0;
+    margin-bottom: 27px;
+}
+header .container-fluid,
+.navbar-collapse {
+    padding: 0;
+}
+.navbar {
+    margin: 0;
+}
+.navbar-toggle {
+    border: 1px solid #333;
+}
+.nav-main {
+    line-height: 40px;
+}
+.nav-main > li > a {
+    padding: 0 9px;
+    color: #333333;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+}
+.nav-main > li > a:hover,
+.nav-main > li > a:focus,
+.nav-main > li > a:active,
+.nav-main > li > a:hover:active,
+.nav-main > li > a:focus:active {
+    color: #00ac4e;
+    background: transparent;
+}
+.dropdown-menu{
+    left:auto;
+}
+.caret {
+    margin: -5px 0 0 2px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+}
+.breadcrumb-item a {
+    text-decoration: underline;
+    color: #333333;
+}
+
+/* Главная */
+.hero-item__block {
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+.hero-item__block.with-picture {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.hero-item__block.with-picture > .hero-announce__block {
+    width: 436px;
+}
+.hero-announce__block {
+    background: rgba(52, 52, 52, 0.8);
+    width: 100%;
+    padding: 40px 35px 30px;
+    height: 100%;
+    color: #FFF;
+}
+.hero-announce__block > .hero-headline__text {
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 24px;
+}
+.hero-announce__block > .hero-preview__text {
+    color: #d4d4d4;
+    font-family: Circe;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.hero-item__block > .hero-date__block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #00ac4e;
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+    z-index: 1;
+}
+
+/* Новость */
+.article__block {
+    margin-bottom: 30px;
+}
+.article__block .article-img {
+    width: 370px;
+    float: left;
+    margin-right: 30px;
+}
+.article__block .date {
+    margin-bottom: 18px;
+}
+.article__block .article__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+}
+.article__block .article__text p {
+    margin-bottom: 18px;
+}
+.article__block hr {
+    margin-bottom: 5px;
+}
+.article-bottom__block div {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-block;
+}
+.article-bottom__block .tags {
+    float: left;
+}
+.article-bottom__block .tags a {
+    text-decoration: underline;
+    color: #00ac4e;
+}
+.article-bottom__block .source {
+    float: right;
+}
+.article-bottom__block .source a {
+    text-decoration: none;
+    color: #00ac4e;
+}
+.same__block {
+    margin-bottom: 40px;
+}
+.same__block .column {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.same__block .column.first {
+    padding-left: 0;
+}
+.same__block .column.last {
+    padding-right: 0;
+}
+.same__block .same-news__block {
+    height: 75px;
+}
+.same__block hr {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.same__block .same-news__block img {
+    width: 70px;
+    float: left;
+    margin-right: 17px;
+}
+.same__block .same-news__block p {
+    font-size: 14px;
+    line-height: 16px;
+}
+.same__block .same-news__block .date {
+    margin-bottom: 8px;
+}
+
+/* Обзор рынка */
+.tabs__block {
+    margin-bottom: 9px;
+    border: none;
+}
+.tabs__block .tab__block {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding: 0 5px;
+    border-left: 1px solid #cecece;
+}
+.tabs__block .tab__block:nth-child(5),
+.tabs__block .tab__block:nth-child(6) {
+    width: 13%;
+}
+.tabs__block .tab__block:last-child {
+    border-right: 1px solid #cecece;
+    width: 16%;
+}
+.tabs__block .tab__text {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+.tabs__block .tab__text:hover,
+.tabs__block .tab__text:focus {
+    background-color: white;
+    border: none;
+}
+.tabs__block .tab__block.active .tab__text {
+    background-color: #00ac4e;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+}
+.tabs__block .tab__block.active .tab__text::after {
+    content: '';
+    position: absolute;
+    left: 44%;
+    bottom: -18px;
+    border: 10px solid transparent;
+    border-top: 10px solid #00ac4e;
+}
+.tab-content {
+    margin-bottom: 25px;
+}
+.widjets__block .green-headline__block {
+    margin-top: 25px;
+}
+
+/* Рубрики */
+.rubric__block {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+.rubric__block .green-headline__block {
+    background-color: #f7f7f7;
+}
+.rubric__block .green-headline__text {
+    font-family: "Raleway";
+    font-size: 16px;
+}
+.rubric__block .news__block {
+    padding: 0 20px 10px;
+}
+.rubric__block .news__block hr {
+    border-style: dashed;
+    background-color: #bababa;
+    margin: 10px 0;
+}
+.rubric__block .announce__block {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+}
+.rubric__block .announce__block .news-headline {
+    font-weight: 700;
+}
+.rubric__block .announce-date {
+    margin-right: 15px;
+}
+
+/* Волны Эллиота */
+.wave__block {
+    margin-bottom: 20px;
+}
+.wave__block .wave-date__block {
+    position: relative;
+    margin-bottom: 10px;
+}
+.wave__block .wave-date__block::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 90%;
+    height: 1px;
+    border-bottom: 1px dashed #bababa;
+}
+.wave__block img {
+    margin-bottom: 10px;
+}
+.wave__block .wave-title__text {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 16px;
+    float: left;
+}
+.wave__block a {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 14px;
+    color: #00ac4e;
+    text-decoration: underline;
+    float: right;
+}
+.wave__block a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Поиск */
+.search__block form {
+    margin-bottom: 10px;
+}
+.search__block .search-text {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search__block .search-text:hover,
+.search__block .search-text:focus {
+    border-color: #9a9a9a;
+}
+.search__block .search-button {
+    background-color: #00ac4e;
+    border-radius: 5px;
+    padding: 8px 20px 10px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    color: white;
+}
+.search__block .results {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 12px;
+}
+.search__block .results-number {
+    font-family: "Circe";
+    font-weight: 300;
+}
+.search__block hr {
+    margin-top: 10px;
+}
+.search-results__block .search-news__block {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.search-results__block .search-news-title__block {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.search-results__block .search-query {
+    color: #00ac4e;
+}
+.navigation__block .description {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.navigation__block .pagination {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 0;
+}
+.pagination li a {
+    padding: 3px 10px 0;
+    border-radius: 0 !important;
+    color: #333333;
+    margin-right: 5px;
+}
+.pagination .active a {
+    background-color: #00ac4e;
+    border-color: #00ac4e;
+    color: white;
+}
+
+/* Прогноз рынков */
+.forecast__block {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.forecast__block .btn-default {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 18px;
+    padding: 6px 20px 2px;
+    box-shadow: none;
+    float: right;
+}
+.forecast__block .btn-default img {
+    margin-bottom: 10px;
+}
+.forecast__block .jq-selectbox__select,
+.forecast__block .jq-selectbox li {
+    width: 220px;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 7px 20px;
+    background-color: white;
+    color: black;
+}
+.forecast__block .jq-selectbox__select {
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    background: url(images/select-arrow.png) no-repeat 95% center white;
+}
+.forecast__block .jq-selectbox li {
+    position: relative;
+    right: 40px;
+    border-top: 1px solid #d4d4d4;
+    cursor: pointer;
+}
+.forecast__block .jq-selectbox li:first-child {
+    border-top: 2px solid #00ac4e;
+}
+#forecast-modal .modal-header {
+    border: none;
+}
+#forecast-modal .modal-header h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+#forecast-modal .modal-body {
+    padding: 20px 50px;
+
+}
+#forecast-modal .modal-body label {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+#forecast-modal .modal-body label:not(:last-child) {
+    width: 16%;
+}
+#forecast-modal .modal-body .checkbox-center__block {
+    text-align: center;
+}
+#forecast-modal .modal-body hr {
+    width: 260px;
+    border-color: #989898;
+    margin-bottom: 10px;
+}
+#forecast-modal .modal-body .modal-checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+#forecast-modal .modal-body .modal-checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+#forecast-modal .modal-body .modal-checkbox:not(checked) + label {
+    position: relative;
+    padding-left: 25px;
+}
+#forecast-modal .modal-body .modal-checkbox:not(checked) + label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+#forecast-modal .modal-body .modal-checkbox:checked + label:before {
+    background-color: #00ac4e;
+    border-color: #00ac4e;
+}
+#forecast-modal .modal-body .modal-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 10px;
+    height: 8px;
+    background: url(images/checkbox-checked.png) no-repeat center;
+}
+#forecast-modal .modal-footer {
+    border: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#forecast-modal .modal-footer .btn-default {
+    float: none;
+    padding: 8px 60px;
+}
+.chart__block {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+#chart_div {
+    width:inherit;
+    height:inherit;
+}
+
+/* Сайдбар */
+.read__block .article-preview__block {
+    padding-left: 15px;
+    border-left: 2px solid #00ac4e;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.read__block hr {
+    border-style: dashed;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.quotations__block {
+    margin-bottom: 30px;
+}
+.tags__block {
+    margin-bottom: 30px;
+}
+.tags__block .tag {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px;
+    border: 1px solid #a9a9a9;
+    margin-bottom: 3px;
+}
+.tags__block .tag:hover {
+    cursor: pointer;
+    background-color: #ededed;
+    border-color: #ededed;
+}
+
+/* Регистрация */
+.register__block {
+    background: url(images/register_background.png) no-repeat top center;
+    padding: 30px 40px;
+    height: 127px;
+    margin-bottom: 35px;
+}
+.register__block div {
+    display: inline-block;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.register__block .register__text {
+    float: left;
+    font-size: 28px;
+}
+.register__block .register__text .bold {
+    font-weight: 700;
+}
+.register__block .btn-default {
+    float: right;
+    margin-top: 23px;
+}
+
+
+footer {
+    background: #343434;
+    padding: 37px 0 30px;
+    margin-top: 50px;
+    color: #a4a4a4;
+}
+footer .footer-quicklink-headline__block {
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+footer .footer-quicklink__block {
+    color: #a4a4a4;
+    font-weight: 300;
+    display: block;
+}
+
+footer .footer-whitelink__text {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+footer .footer-whitelink__text:hover,
+footer .footer-whitelink__text:focus,
+footer .footer-whitelink__text:active,
+footer .footer-whitelink__text:hover:active,
+footer .footer-whitelink__text:focus:active {
+    text-decoration: none;
+    color: #FFF;
+}
+footer .footer-copyright__block {
+    margin: 10px 0;
+}
+footer .footer-disclaimer__block {
+    font-size: 12px;
+    line-height: 13px;
+}
+.footer-copyright-spacer__block {
+    margin: 15px 0;
+}

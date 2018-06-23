@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Поиск</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="template_styles.css" rel="stylesheet">
+    <link href="adaptive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="upper-header__block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-8 col-lg-offset-6 col-md-offset-6">
+                <input type="text" class="header-search__control" placeholder="Поиск по сайту" />
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-4">
+                <div class="header-current-time__block">
+                    <span>12:35:45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <a href="/" class="logo__block"></a>
+            </div>
+            <div class="col-lg-9 col-xs-12">
+
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+                        </div>
+
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav nav-main nav-justified">
+                                <li><a href="#">Главная</a></li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Инструменты <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Рубрики <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Календарь</a></li>
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Прогнозы <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">EUR/USD</a></li>
+                                        <li><a href="#">GBP/USD</a></li>
+                                        <li><a href="#">USD/JPY</a></li>
+                                        <li><a href="#">Нефть</a></li>
+                                        <li><a href="#">Золото</a></li>
+                                        <li><a href="#">Фондовый рынок</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Макроэкономика</a></li>
+                                <li><a href="#">Графики</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="breadcrumbs">
+        <span class="breadcrumb-item"><a href="#">Главная</a> » </span>
+        <span class="breadcrumb-item">Поиск</span>
+    </div>
+    <h1>Поиск</h1>
+
+    <div class="search__block">
+        <form>
+            <input type="text" value="Форекс" class="search-text">
+            <input type="button" value="поиск" class="search-button">
+        </form>
+        <span class="results">Результатов: <span class="results-number">245</span></span>
+        <hr>
+    </div>
+
+    <div class="search-results__block">
+        <div class="search-news__block">
+            <div class="search-news-title__block">ABN Amro: нефть пала жертвой несбывшихся
+                <span class="search-query">форекс</span> надежд, но такая реакция - временное явление</div>
+            <p>
+                Нефть завершила четверг активным падением, и, в то время как ей удалось удержаться выше поддержки вблизи $51,
+                тон торгов остается подавленным, и прорыв ниже обещает придать свежий импульс для развития снижения.
+                В ABN Amro, впрочем, считают, что худшее уже позади, и на движение стоит смотреть как на возможность занять
+                длинные позиции по более привлекательным уровням. В банке отмечают, что ралли, конечно, ждать не приходится,
+                однако продление срока сделки по ограничению добычи объективно позитивно для рынка. В ABN Amro отмечают,
+                что сегодняшний обвал <span class="search-query">Форекс</span> цен является отражением разочарования той
+                части участников рынка, кто занимал лонги в надежде на то, что ОПЕК сможет собраться с духом и поставить
+                более агрессивные цели сокращения добычи.
+                Эти позиции к настоящему времени, вероятно, уже ликвидированы, и нефть вскоре может повернуть выше.
+                Фокус теперь вновь смещается к ситуации в США, в частности к данным по запасам и объему добычи.
+                Свидетельства более сильного роста производства грозят негативно отразиться на настрое, но в ABN Amro
+                полагают, что восстановление добычи сланцевой нефти в США будет недостаточно сильным, чтобы нивелировать
+                эффект мер ОПЕК. ABN Amro пока сохраняет прогнозы по цене нефти марки брент, озвученные в конце апреля:
+                $50 на второй квартал $55 на третий квартал $60 на четвертый квартал Источник: Forexpf.Ru -
+                Новости рынка <span class="search-query">Форекс</span>  По теме: Нефть: новости из Вены разочаровали рынок
+            </p>
+        </div>
+        <div class="search-news__block">
+            <div class="search-news-title__block">Credit Agricole: торговые стратегии на <span class="search-query">форекс</span></div>
+            <p>
+                Credit Agricole: рекомендации по торговле валютой Изменения по сравнению с предыдущей публикацией
+                торговых стратегий данного банка: EURBGP. Изменены параметры позиции от 8 мая: покупка от 0.8470, цель
+                0.8900, новый стоп 0.8570 (пред. 0.8490) По теме: Credit Suisse: торговые стратегии на <span class="search-query">форекс</span> Открытые
+                позиции Credit Agricole: Инструмент Валютный курс Дата Покупка Продажа Открытие Цель Стоп Текущий
+                результат в пунктах EURBGP евро к фунту стерлингов 8 мая покупка 0.8470 0.8900 0.8570 +188 По теме:
+                Deutsche Bank: торговые стратегии на форекс Источник: Forexpf.Ru - Новости рынка <span class="search-query">Форекс</span>
+            </p>
+        </div>
+        <div class="search-news__block">
+            <div class="search-news-title__block">TD Bank: торговые стратегии на <span class="search-query">форекс</span></div>
+            <p>
+                TD Bank: рекомендации по торговле валютой Изменения по сравнению с предыдущей публикацией <span class="search-query">орекс</span>
+                стратегий данного банка: USDCAD. Для короткой позиции (5 мая) от 1.3700 изменен стоп: с 1.3950 на 1.3700
+                Открытые позиции TD Bank (+304 пунктов в моменте): Инструмент Валютный курс Дата Покупка Продажа
+                Открытие Цель Стоп Текущий результат в пунктах USDCAD доллар США к канадскому доллару 5 мая продажа
+                1.3700 1.3200 1.3700 +304 Отложенные ордера TD Bank: Инструмент Валютный курс Дата Покупка Продажа
+                Открытие Цель Стоп EURGBP евро к фунту 12 мая покупка 0.8410 0.8740 0.8300
+            </p>
+        </div>
+        <div class="search-news__block">
+            <div class="search-news-title__block">ABN Amro: нефть пала жертвой несбывшихся
+                <span class="search-query">форекс</span> надежд, но такая реакция - временное явление</div>
+            <p>
+                Нефть завершила четверг активным падением, и, в то время как ей удалось удержаться выше поддержки вблизи $51,
+                тон торгов остается подавленным, и прорыв ниже обещает придать свежий импульс для развития снижения.
+                В ABN Amro, впрочем, считают, что худшее уже позади, и на движение стоит смотреть как на возможность занять
+                длинные позиции по более привлекательным уровням. В банке отмечают, что ралли, конечно, ждать не приходится,
+                однако продление срока сделки по ограничению добычи объективно позитивно для рынка. В ABN Amro отмечают,
+                что сегодняшний обвал <span class="search-query">Форекс</span> цен является отражением разочарования той
+                части участников рынка, кто занимал лонги в надежде на то, что ОПЕК сможет собраться с духом и поставить
+                более агрессивные цели сокращения добычи.
+                Эти позиции к настоящему времени, вероятно, уже ликвидированы, и нефть вскоре может повернуть выше.
+                Фокус теперь вновь смещается к ситуации в США, в частности к данным по запасам и объему добычи.
+                Свидетельства более сильного роста производства грозят негативно отразиться на настрое, но в ABN Amro
+                полагают, что восстановление добычи сланцевой нефти в США будет недостаточно сильным, чтобы нивелировать
+                эффект мер ОПЕК. ABN Amro пока сохраняет прогнозы по цене нефти марки брент, озвученные в конце апреля:
+                $50 на второй квартал $55 на третий квартал $60 на четвертый квартал Источник: Forexpf.Ru -
+                Новости рынка <span class="search-query">Форекс</span>  По теме: Нефть: новости из Вены разочаровали рынок
+            </p>
+        </div>
+        <div class="search-news__block">
+            <div class="search-news-title__block">Credit Agricole: торговые стратегии на <span class="search-query">форекс</span></div>
+            <p>
+                Credit Agricole: рекомендации по торговле валютой Изменения по сравнению с предыдущей публикацией
+                торговых стратегий данного банка: EURBGP. Изменены параметры позиции от 8 мая: покупка от 0.8470, цель
+                0.8900, новый стоп 0.8570 (пред. 0.8490) По теме: Credit Suisse: торговые стратегии на <span class="search-query">форекс</span> Открытые
+                позиции Credit Agricole: Инструмент Валютный курс Дата Покупка Продажа Открытие Цель Стоп Текущий
+                результат в пунктах EURBGP евро к фунту стерлингов 8 мая покупка 0.8470 0.8900 0.8570 +188 По теме:
+                Deutsche Bank: торговые стратегии на форекс Источник: Forexpf.Ru - Новости рынка <span class="search-query">Форекс</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="navigation__block">
+        <span class="description">Страницы:</span>
+        <ul class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Главная</a>
+
+                <a href="#" class="footer-quicklink__block">Авторизация</a>
+                <a href="#" class="footer-quicklink__block">Регистрация</a>
+                <a href="#" class="footer-quicklink__block">Контакты</a>
+
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Инструменты</a>
+                <a href="#" class="footer-quicklink__block">EUR/USD</a>
+                <a href="#" class="footer-quicklink__block">GBP/USD</a>
+                <a href="#" class="footer-quicklink__block">USD/JPY</a>
+                <a href="#" class="footer-quicklink__block">Нефть</a>
+                <a href="#" class="footer-quicklink__block">Золото</a>
+                <a href="#" class="footer-quicklink__block">Фондовый рынок</a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="footer-quicklink-headline__block">Рубрики</a>
+                <a href="#" class="footer-quicklink__block">EUR/USD</a>
+                <a href="#" class="footer-quicklink__block">GBP/USD</a>
+                <a href="#" class="footer-quicklink__block">USD/JPY</a>
+                <a href="#" class="footer-quicklink__block">Нефть</a>
+                <a href="#" class="footer-quicklink__block">Золото</a>
+                <a href="#" class="footer-quicklink__block">Фондовый рынок</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Календарь</a></div>
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Прогнозы</a></div>
+                    <div class="col-lg-4"><a href="#" class="footer-quicklink-headline__block">Макроэкономика</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-copyright-spacer__block">
+
+                        </div>
+                        <a href="#" class="footer-whitelink__text">Политика конфеденциальности</a> <br />
+                        <a href="#" class="footer-whitelink__text">Условия использования материалов с сайта</a>
+                        <div class="footer-copyright__block">
+                            © 2016-2017 fx-watch.ru Все права зарегистрированы. 18+
+                        </div>
+                        <div class="footer-disclaimer__block">
+                            Информация, представленная на сайте, не является основанием для принятия инвестиционных решений и дана исключительно в ознакомительных целях.
+                            Использование материалов в интернете должно сопровождаться гиперссылкой на сайт fxwatch.ru. Автоматический импорт материалов и информации с сайта запрещен.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>
